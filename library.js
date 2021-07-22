@@ -15,7 +15,7 @@ let readStatus = false;
 buttonForm.addEventListener("click", showForm);
 buttonClear.addEventListener("click", clearLibrary);
 form.addEventListener("submit", addBookToLibrary);
-closeForm.addEventListener("click", closeFormFunction);
+closeForm.addEventListener("click", hideForm);
 readElem.addEventListener("click", toggleReadStatus);
 
 function Book(id, title, author, pages, read){
@@ -50,7 +50,7 @@ function showForm(){
     form.style.display = "block";
 }
 
-function closeFormFunction(){
+function hideForm(){
     form.style.display = "none";
 }
 
