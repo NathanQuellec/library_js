@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <link href="libraryVClass.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id = "container">
+            <button id="showForm">Add book</button>
+            <button id="deleteLibrary">Clear</button>
+            <div id="cardArea"></div>
+            <form id="form" name="form">
+                <span id="closeForm">x</span>
+                <label for="title">Titre: </label><br><br>
+                <input id="title" name="title" type="text" required><br><br>
+                <label for="author">Auteur: </label><br><br>
+                <input id="author" name="author" type="text" required><br><br>
+                <label for="pages">Pages: </label><br><br>
+                <input id="pages" name="pages" type="number" required><br><br>
+                <span id="readStatus">Read</span><br><br>
+                <button id="formAddBook" type="submit">Ajout livre</button>
+            </form>
+        </div>
+    </body>
+</html>
+<script src="libraryVClass.js"></script>
